@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  XCornersViewController.swift
 //  RoundCorners
 //
 //  Created by Kyle Bashour on 7/3/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class XCornersViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!

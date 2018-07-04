@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tx6-hU-qYE">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--iPhone X Corners-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoundCorners" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="XCornersViewController" customModule="RoundCorners" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minValue="30" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-Vb-bhr">
-                                <rect key="frame" x="14" y="328.5" width="347" height="31"/>
+                                <rect key="frame" x="14" y="371.66666666666669" width="347" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.21960784310000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.61176470589999998" green="0.38431372549999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -27,22 +27,22 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRp-Rs-DAZ">
-                                <rect key="frame" x="170" y="288.5" width="35" height="20.5"/>
+                                <rect key="frame" x="170.33333333333334" y="331.33333333333331" width="34.666666666666657" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WP9-pK-3xc">
-                                <rect key="frame" x="76.5" y="374.5" width="222.5" height="31"/>
+                                <rect key="frame" x="76.333333333333329" y="417.66666666666669" width="222.33333333333337" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continuous Corners:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuY-UW-q0B">
-                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAy-sH-ug7">
-                                        <rect key="frame" x="173.5" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="173.33333333333331" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="updateCorners" destination="BYZ-38-t0r" eventType="valueChanged" id="pu7-3c-SAp"/>
                                         </connections>
@@ -62,6 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="iPhone X Corners" id="dnA-k2-xgp"/>
                     <connections>
                         <outlet property="continuousSwitch" destination="mAy-sH-ug7" id="Wyf-1U-OrI"/>
                         <outlet property="label" destination="KRp-Rs-DAZ" id="Y4C-1h-jPv"/>
@@ -70,6 +71,141 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1742" y="133"/>
+        </scene>
+        <!--Continuous-->
+        <scene sceneID="tog-DQ-6hT">
+            <objects>
+                <viewController id="OoR-xu-Ktl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fvg-j1-diO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9cz-rV-ZC5">
+                                <rect key="frame" x="16" y="178.66666666666669" width="343" height="534.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-uP-L6B">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="151.33333333333334"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWB-IG-QM4" customClass="RoundableView" customModule="RoundCorners" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="151.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thE-VL-ZM2">
+                                                        <rect key="frame" x="51" y="65.333333333333343" width="49.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="thE-VL-ZM2" firstAttribute="centerX" secondItem="XWB-IG-QM4" secondAttribute="centerX" id="H7n-R7-PZS"/>
+                                                    <constraint firstItem="thE-VL-ZM2" firstAttribute="centerY" secondItem="XWB-IG-QM4" secondAttribute="centerY" id="R75-QH-NFN"/>
+                                                    <constraint firstAttribute="width" secondItem="XWB-IG-QM4" secondAttribute="height" multiplier="1:1" id="sJA-9w-IpW"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="continuousCorners" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyT-X9-E8I" customClass="RoundableView" customModule="RoundCorners" customModuleProvider="target">
+                                                <rect key="frame" x="191.66666666666663" y="0.0" width="151.33333333333337" height="151.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continuous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAK-QE-Wm1">
+                                                        <rect key="frame" x="31.999999999999993" y="65.333333333333343" width="87.333333333333314" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.074509803920000006" green="0.35686274509999999" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="OAK-QE-Wm1" firstAttribute="centerX" secondItem="yyT-X9-E8I" secondAttribute="centerX" id="Hti-TL-Cpt"/>
+                                                    <constraint firstAttribute="width" secondItem="yyT-X9-E8I" secondAttribute="height" multiplier="1:1" id="M3b-zC-9ml"/>
+                                                    <constraint firstItem="OAK-QE-Wm1" firstAttribute="centerY" secondItem="yyT-X9-E8I" secondAttribute="centerY" id="nyV-Ny-ft0"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="continuousCorners" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-lf-rTz">
+                                        <rect key="frame" x="0.0" y="191.33333333333337" width="343" height="343"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQQ-3U-FMX" customClass="RoundableView" customModule="RoundCorners" customModuleProvider="target">
+                                                <rect key="frame" x="-343" y="0.0" width="686" height="686"/>
+                                                <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="continuousCorners" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-l1-wMt" customClass="RoundableView" customModule="RoundCorners" customModuleProvider="target">
+                                                <rect key="frame" x="-343" y="0.0" width="686" height="686"/>
+                                                <color key="backgroundColor" red="0.074509803920000006" green="0.35686274509999999" blue="0.58823529409999997" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="continuousCorners" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="IQQ-3U-FMX" firstAttribute="top" secondItem="4bn-lf-rTz" secondAttribute="top" id="53y-rD-k5r"/>
+                                            <constraint firstAttribute="trailing" secondItem="IQQ-3U-FMX" secondAttribute="trailing" id="Q1Y-Gg-Mo4"/>
+                                            <constraint firstItem="0UK-l1-wMt" firstAttribute="height" secondItem="4bn-lf-rTz" secondAttribute="height" multiplier="2" id="QIU-NB-tih"/>
+                                            <constraint firstItem="IQQ-3U-FMX" firstAttribute="width" secondItem="4bn-lf-rTz" secondAttribute="width" multiplier="2" id="TIn-L4-TTE"/>
+                                            <constraint firstAttribute="width" secondItem="4bn-lf-rTz" secondAttribute="height" multiplier="1:1" id="VDM-Sd-4GD"/>
+                                            <constraint firstItem="0UK-l1-wMt" firstAttribute="width" secondItem="4bn-lf-rTz" secondAttribute="width" multiplier="2" id="W4b-b5-0ZD"/>
+                                            <constraint firstAttribute="trailing" secondItem="0UK-l1-wMt" secondAttribute="trailing" id="jiT-1e-HTl"/>
+                                            <constraint firstItem="0UK-l1-wMt" firstAttribute="top" secondItem="4bn-lf-rTz" secondAttribute="top" id="l1i-Y9-tm2"/>
+                                            <constraint firstItem="IQQ-3U-FMX" firstAttribute="height" secondItem="4bn-lf-rTz" secondAttribute="height" multiplier="2" id="xQ3-o4-h3I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xrd-Pm-aqb" firstAttribute="bottom" secondItem="9cz-rV-ZC5" secondAttribute="bottom" constant="16" id="If3-ed-aay"/>
+                            <constraint firstItem="9cz-rV-ZC5" firstAttribute="leading" secondItem="Fvg-j1-diO" secondAttribute="leading" constant="16" id="SWv-a3-san"/>
+                            <constraint firstItem="xrd-Pm-aqb" firstAttribute="trailing" secondItem="9cz-rV-ZC5" secondAttribute="trailing" constant="16" id="eeh-o3-kV3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xrd-Pm-aqb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Continuous" id="sR8-iW-dXN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOj-Dd-fc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="czx-cC-G21">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tx6-hU-qYE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BRK-dA-KiH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OoR-xu-Ktl" kind="relationship" relationship="viewControllers" id="pGL-DP-Lfk"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PTZ-0k-uR1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLH-c9-rUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
