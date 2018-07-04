@@ -12,6 +12,7 @@
 		C2778B6B20ECCD5100C961E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2778B6920ECCD5100C961E6 /* Main.storyboard */; };
 		C2778B6D20ECCD5200C961E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2778B6C20ECCD5200C961E6 /* Assets.xcassets */; };
 		C2778B7020ECCD5200C961E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2778B6E20ECCD5200C961E6 /* LaunchScreen.storyboard */; };
+		C2778B7A20ECCE3C00C961E6 /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2778B7920ECCE3C00C961E6 /* UIView+RoundCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2778B6C20ECCD5200C961E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2778B6F20ECCD5200C961E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2778B7120ECCD5200C961E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2778B7920ECCE3C00C961E6 /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorners.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C2778B6520ECCD5100C961E6 /* AppDelegate.swift */,
 				C2778B6720ECCD5100C961E6 /* ViewController.swift */,
+				C2778B7920ECCE3C00C961E6 /* UIView+RoundCorners.swift */,
 				C2778B6920ECCD5100C961E6 /* Main.storyboard */,
 				C2778B6C20ECCD5200C961E6 /* Assets.xcassets */,
 				C2778B6E20ECCD5200C961E6 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2778B7A20ECCE3C00C961E6 /* UIView+RoundCorners.swift in Sources */,
 				C2778B6820ECCD5100C961E6 /* ViewController.swift in Sources */,
 				C2778B6620ECCD5100C961E6 /* AppDelegate.swift in Sources */,
 			);
